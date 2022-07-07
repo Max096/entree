@@ -1,0 +1,37 @@
+.root {
+  font-weight: bold;
+  li {
+    display: inline-flex;
+  }
+
+  a {
+    color: violet;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 10px;
+
+    border: 3px solid violet;
+    border-radius: 30px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: violet;
+      color: white;
+    }
+  }
+
+  :global {
+    .selected{ 
+      a {
+        background-color: violet;
+        color: white;
+      }
+    }
+  }
+}
